@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 120rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 15px;
 }
@@ -82,4 +82,17 @@ body {
 
 .navright li a:hover {
     color: #FF2A57;
+}
+
+img {
+    max-width: auto;
+    max-height: 700px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
 }
