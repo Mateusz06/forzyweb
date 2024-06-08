@@ -3,7 +3,7 @@
         "car": "BMW M3",
         "model": "G80",
         "year": "2020 - 2023",
-        "img1": "/images/bmwm3g80forzy1.jpg",
+        "img1": "bmwm3g80forzy1.jpg",
         "img2": "img2.jpg",
         "img3": "img3.jpg"
     },
@@ -11,7 +11,7 @@
         "car": "BMW M2 CS",
         "model": "F87",
         "year": "2016 - 2021",
-        "img1": "/images/bmwm2csforzy2.jpg",
+        "img1": "bmwm2csforzy2.jpg",
         "img2": "img2.jpg",
         "img3": "img3.jpg"
     },
@@ -19,7 +19,7 @@
         "car": "BMW M5 CS",
         "model": "F90",
         "year": "2017 - 2023",
-        "img1": "/images/bmwm5csforzy3.jpg",
+        "img1": "bmwm5csforzy3.jpg",
         "img2": "img2.jpg",
         "img3": "img3.jpg"
     }
