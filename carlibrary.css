@@ -82,6 +82,8 @@ body {
     text-shadow: 0 0 8px #CCF0FF;
 }
 
+/* carlibrary.css */
+
 .card-container {
     display: flex;
     justify-content: center;
@@ -94,16 +96,16 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     color: #fff;
-    margin: 0 15px;
+    margin: 15px;
     max-width: 30rem;
     width: 100%;
+    height: auto;
     transition: transform 0.3s ease;
-    
+    position: relative;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    
 }
 
 .card-content {
@@ -121,30 +123,34 @@ body {
     margin-bottom: 10px;
 }
 
-.title-container {
-    text-align: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+.card-image {
+    width: 100%;
+    height: auto;
+    max-height: 16rem;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 2.5rem;
 }
 
-.main-title {
+.learn-more-link {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #121212b4;
     color: #CCF0FF;
-    font-size: 36px;
-    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    width: 25em;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.made-by {
-    color: #ffffff;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.line {
-    border: 1px solid #CCF0FF;
-    width: 50%;
-    margin: auto;
-}
-
-.invis {
-    color: #121212;
+.learn-more-link:hover {
+    background-color: #121212;
 }
