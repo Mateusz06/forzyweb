@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 110rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-name {
+    color: #A5A8FF;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(165, 168, 255, 0.75);
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.brand-name:hover {
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 0.5rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 60px;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #A5A8FF;
+    color: #101010;
+}
+
+.nav-links a.active {
+    background-color: #A5A8FF;
+    color: #101010;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 6rem auto 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    background-color: #282828;
+    color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+}
+
+.card-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #A5A8FF;
+    text-shadow: 0 0 10px rgba(165, 168, 255, 0.75);
+
+}
+
+.card-header p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+    color: #d1d1d1;
+    flex: 1;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.read-more {
+    background-color: #A5A8FF;
+    color: #282828;
+    padding: 0.5rem 2rem; /* Increased padding to make the button longer */
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase;
+    font-weight: 800;
+    min-width: 10rem; /* Added minimum width */
+    text-align: center; /* Ensure text is centered */
+}
+
+.read-more:hover {
+    background-color: #ffffff;
+    color: #282828;
+}
+
+.learn-more {
+    color: #A5A8FF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.learn-more:hover {
+    color: #ffffff;
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 2rem 0;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links li {
+    margin: 0;
+}
+
+.footer-links a {
+    color: #A5A8FF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+#leaves-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.leaf {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
